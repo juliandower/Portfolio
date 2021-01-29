@@ -60,12 +60,8 @@ img {
     flex-direction: column;
     text-align: left;
   }
-  .topnav a {
-    float: right;
-  }
 
-  img {
-    display: flex;
+  .avatar {
     width: 243px;
     margin: 10%;
   }
@@ -77,28 +73,22 @@ img {
 @media (max-width: 949px) {
   .container {
     flex-direction: column;
+    padding-bottom: 20px;
   }
 
-  .topnav a {
-    text-align: center;
-  }
-
-  img {
+  .avatar {
     width: 180px;
     margin: 10%;
   }
   .bio {
+    width: unset;
     text-align: center;
     padding: 0;
-    margin: auto;
+    margin: 25px;
   }
 
   .blogPosts {
     flex-direction: column;
-  }
-
-  button {
-    margin-bottom: 50px;
   }
 }
 
@@ -126,16 +116,14 @@ p {
 
 button {
   align-self: center;
-  align-items: center;
   background-color: #ff6464;
   font-family: Heebo;
   font-size: 20px;
   color: white;
-  width: 208px;
-  height: 47px;
+  padding: 7px 10px;
+
   border: 2px solid #ff6464;
   border-radius: 2px;
-  margin-bottom: 30px;
 }
 
 .blogPostPanel {

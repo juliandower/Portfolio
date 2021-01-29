@@ -71,6 +71,11 @@ img {
 }
 
 @media (max-width: 949px) {
+  .topnav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
   .container {
     flex-direction: column;
     padding-bottom: 20px;

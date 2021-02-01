@@ -8,12 +8,33 @@
     />
     <link href="stylesheet.css" rel="stylesheet" />
   </head>
+  <img
+    class="darkModeToggle"
+    alt="Dark Mode"
+    src="src/img/darkmode/pngfind.com-night-png-759829.png"
+    alt=""
+  />
   <body>
     <div class="topnav">
       <a href="#Contact">Contact</a>
       <a href="#Blog">Blog</a>
       <a href="#Works">Works</a>
     </div>
+    <script>
+      document.querySelectorAll(".darkModeToggle").forEach(toggle =>
+        toggle.addEventListener("click", function toggleDarkMode() {
+          //Toggle .rotate darkModeToggle
+          document
+            .getElementsByClassName("darkModeToggle")[0]
+            .classList.toggle("rotated");
+          // Toggle .dark to <body>
+          setTimeout(() => {
+            document.getElementsByTagName("body")[0].classList.toggle("dark");
+          }, 0);
+          console.log("dark");
+        })
+      );
+    </script>
 
     <div class="container">
       <img

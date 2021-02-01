@@ -114,13 +114,14 @@ body {
 
   .avatar {
     width: 180px;
-    margin: 10%;
+    margin: 10px;
   }
   .bio {
     width: unset;
     text-align: center;
     padding: 0;
     margin: 25px;
+    margin-top: 0px;
   }
 
   .blogPosts {
